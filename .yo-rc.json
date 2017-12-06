@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Andrey Filimonow",
+      "authorEmail": "andrefilimono@gmail.com",
+      "authorUrl": "https://github.com/andrefilimono"
+    }
+  }
+}

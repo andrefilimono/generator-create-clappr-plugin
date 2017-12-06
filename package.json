@@ -1,0 +1,36 @@
+{
+  "name": "generator-create-clappr-plugin",
+  "version": "0.0.1",
+  "description": "Yeoman generator for clappr player plugins",
+  "author": "Andrey Filimonow <andrefilimono@gmail.com> (https://github.com/andrefilimono)",
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "clappr",
+    "plugin",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "nsp": "^2.6.3",
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "yeoman-generator": "^2.0.1"
+  },
+  "scripts": {
+    "prepublish": "nsp check",
+    "precommit": "standard",
+    "lint": "standard",
+    "fix": "standard --fix"
+  },
+  "standard": {
+    "ignore": [
+      "generators/app/templates/*"
+    ]
+  },
+  "repository": "https://github.com/andrefilimono/generator-create-clappr-plugin",
+  "license": "MIT"
+}
