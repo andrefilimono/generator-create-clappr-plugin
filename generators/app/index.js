@@ -107,6 +107,7 @@ module.exports = class extends Generator {
       this.destinationPath('src/main.js'),
       {
         type: this.props.type,
+        name: this.props.name,
         className: this.props.className
       }
     )
