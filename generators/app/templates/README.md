@@ -32,19 +32,19 @@ var player = new Clappr.Player({
 Install dependencies:
 
 ```shell
-  yarn install
+yarn install
 ```
 
 Start HTTP dev server `http://0.0.0.0:8080`:
 
 ```shell
-  yarn run start
+yarn start
 ```
 
-Upgrade packages to latest version:
+Upgrade packages to the latest version:
 
 ```shell
-  yarn upgrade --latest
+yarn upgrade --latest
 ```
 
 ## Release
@@ -52,7 +52,7 @@ Upgrade packages to latest version:
 Minified version of plugin will be placed at `dist/<%= name %>.min.js`
 
 ```shell
-  yarn run release
+yarn release
 ```
 
 ## Lint
@@ -60,11 +60,11 @@ Minified version of plugin will be placed at `dist/<%= name %>.min.js`
 Run linter:
 
 ```shell
-  yarn run lint
+yarn lint
 ```
 
 Fix lint errors:
 
 ```shell
-  yarn run fix
+yarn fix
 ```
