@@ -1,3 +1,8 @@
+.env
+coverage
+build
+docs
+.vscode
 .idea
 lib
 dist
@@ -6,5 +11,5 @@ node_modules
 *.log
 .DS_Store
 npm-debug.log
-
-
+yarn-error.log
+package-lock.json
