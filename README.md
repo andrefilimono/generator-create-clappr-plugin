@@ -1,3 +1,6 @@
+[![npm version](https://badge.fury.io/js/generator-create-clappr-plugin.svg)](https://badge.fury.io/js/generator-create-clappr-plugin)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # generator-create-clappr-plugin
 
 > Yeoman generator for clappr player plugins
