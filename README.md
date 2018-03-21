@@ -9,21 +9,37 @@
 
 First, install [Yeoman](http://yeoman.io) and generator-create-clappr-plugin using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
+### NPM
+
+Install packages:
+
 ```bash
-npm install -g yo
-npm install -g generator-create-clappr-plugin
+npm install -g yo generator-create-clappr-plugin
 ```
 
-Then generate your new project:
+Create a directory for new plugin:
+
+```bash
+mkdir my_awesome_plugin && cd my_awesome_plugin
+```
+
+Then generate your new plugin:
 
 ```bash
 yo create-clappr-plugin
 ```
 
 ## License
+### NPX
 
 MIT © [Andrey Filimonow]()
+Create a directory for new plugin:
 
+```bash
+mkdir my_awesome_plugin && cd my_awesome_plugin
+```
+
+Generate your new plugin with this one-liner:
 
 [npm-image]: https://badge.fury.io/js/generator-create-clappr-plugin.svg
 [npm-url]: https://npmjs.org/package/generator-create-clappr-plugin
@@ -33,3 +49,6 @@ MIT © [Andrey Filimonow]()
 [daviddm-url]: https://david-dm.org/andrefilimono/generator-create-clappr-plugin
 [coveralls-image]: https://coveralls.io/repos/andrefilimono/generator-create-clappr-plugin/badge.svg
 [coveralls-url]: https://coveralls.io/r/andrefilimono/generator-create-clappr-plugin
+```bash
+npx -p yo -p generator-create-clappr-plugin -- yo create-clappr-plugin
+```
