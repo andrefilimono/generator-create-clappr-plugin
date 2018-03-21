@@ -1,4 +1,6 @@
 import { <%= type %> } from 'clappr'
 
-export default class <%= className %> extends <%= type %> {
+class <%= className %> extends <%= type %> {
 }
+
+export default <%= className %>
