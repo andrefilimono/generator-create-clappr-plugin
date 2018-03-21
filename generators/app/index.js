@@ -62,6 +62,11 @@ module.exports = class extends Generator {
     )
 
     this.fs.copy(
+      this.templatePath('yarnclean'),
+      this.destinationPath('.yarnclean')
+    )
+
+    this.fs.copy(
       this.templatePath('index.js'),
       this.destinationPath('index.js')
     )
