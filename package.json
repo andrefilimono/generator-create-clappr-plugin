@@ -1,6 +1,6 @@
 {
   "name": "generator-create-clappr-plugin",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Yeoman generator for clappr player plugins",
   "author": "Andrey Filimonov <andrefilimono@gmail.com> (https://github.com/andrefilimono)",
   "files": [
