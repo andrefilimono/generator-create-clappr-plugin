@@ -1,5 +1,6 @@
-'use strict'
 const Generator = require('yeoman-generator')
+
+const toLowerCase = string => string.charAt(0).toLowerCase() + string.slice(1)
 const pluginTypes = [
   'ContainerPlugin',
   'UIContainerPlugin',
@@ -8,13 +9,9 @@ const pluginTypes = [
   'Playback'
 ]
 
-function toLowerCase (string) {
-  return string.charAt(0).toLowerCase() + string.slice(1)
-}
-
 module.exports = class extends Generator {
-  prompting () {
-    const prompts = [{
+  async prompting () {
+    this.props = await this.prompt([{
       type: 'input',
       name: 'name',
       message: 'Your plugin name (ex: clappr-events)'
@@ -43,11 +40,7 @@ module.exports = class extends Generator {
       type: 'input',
       name: 'repository',
       message: 'Plugin repository URL'
-    }]
-
-    return this.prompt(prompts).then(props => {
-      this.props = props
-    })
+    }])
   }
 
   writing () {
@@ -67,8 +60,8 @@ module.exports = class extends Generator {
     )
 
     this.fs.copy(
-      this.templatePath('index.js'),
-      this.destinationPath('index.js')
+      this.templatePath('browserslist'),
+      this.destinationPath('browserslist')
     )
 
     this.fs.copyTpl(

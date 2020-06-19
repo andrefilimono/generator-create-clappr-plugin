@@ -4,8 +4,8 @@
   "description": "<%= description %>",
   "main": "dist/<%= name %>.min.js",
   "scripts": {
-    "release": "standard && webpack --progress",
-    "start": "webpack-dev-server",
+    "release": "standard && webpack --mode production",
+    "start": "webpack-dev-server --mode development",
     "lint": "standard",
     "fix": "standard --fix"
   },
@@ -13,15 +13,15 @@
     "name": "<%= authorName %>",
     "email": "<%= authorEmail %>"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
   "repository": "<%= repository %>",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "^1.6.1",
-    "webpack": "^3.11.0",
-    "standard": "^11.0.0",
-    "webpack-dev-server": "^2.11.1"
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "standard": "^14.3.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
