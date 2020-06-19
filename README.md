@@ -45,4 +45,4 @@ npx -p yo -p generator-create-clappr-plugin -- yo create-clappr-plugin
 
 ## License
 
-MIT © [Andrey Filimonow]()
+MIT © [Andrey Filimonov](https://github.com/andrefilimono)
