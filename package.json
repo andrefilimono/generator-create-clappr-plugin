@@ -13,12 +13,11 @@
     "yeoman-generator"
   ],
   "devDependencies": {
-    "husky": "^0.14.3",
-    "nsp": "^3.2.1",
-    "standard": "^11.0.1"
+    "husky": "^4.2.5",
+    "standard": "^14.3.4"
   },
   "dependencies": {
-    "yeoman-generator": "^2.0.3"
+    "yeoman-generator": "^4.10.1"
   },
   "scripts": {
     "lint": "standard",
